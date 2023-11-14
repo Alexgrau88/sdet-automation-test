@@ -1,0 +1,41 @@
+1. Project's Title
+Swapcard Automation Framework
+
+2. Project Description
+Welcome to the Swapcard Assignment Automation Framework! This project is designed to automate testing for the Amazon webpage, ensuring its functionality and reliability. Leveraging Selenium and Python, the framework provides a comprehensive suite of tests to validate critical features, enhancing the overall quality of the Swapcard platform.
+Technology Stack:
+    Selenium for web automation
+    Python for scripting
+    Allure for test reporting
+Challenges:
+    Overcame challenges in handling dynamic web elements and implemented a robust solution.
+    Optimizing test execution speed, and integrating with continuous integration tools.
+
+3. How to Install and Run the Project
+Prerequisites:
+    Python installed
+    Chrome browser installed
+    pip install selenium
+    pip install pytest
+    pip install allure-pytest
+    pip install amazoncaptcha
+    pip install DateTime
+
+Installation Steps:
+Clone the repository
+    git clone https://github.com/yourusername/swapcard-automation.git
+    cd swapcard-automation/tests
+
+4. How to Use the Project
+Execute the provided command to run the test ( must be in test directory)
+    pytest -v test_swapcard.py
+Screenshots and detailed test reports are generated using Allure, to view the Allure report, run the following command:
+    allure serve allure-results
+
+Note:
+1. Sometimes test will fail with "Sorry, something went wrong" error. Needs to be further investigated and improved, but due to time constraints it is not done
+    Link to article relating to this: https://www.gamerevolution.com/guides/691051-amazon-sorry-something-went-wrong-error-fix
+2. Use of time.sleep() throughout the tests is done because it proved to be only reliable way of running them, a function to be used was created and is available to see in conftest.py
+    implicit_waits also did not work for this
+    Possible better way to improve, but again time constraint limited this
+3. Headless parametrization was attempted unsuccessfully, should have worked. Needs further investigation
