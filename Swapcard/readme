@@ -39,3 +39,4 @@ Note:
     implicit_waits also did not work for this
     Possible better way to improve, but again time constraint limited this
 3. Headless parametrization was attempted unsuccessfully, should have worked. Needs further investigation
+4. Test step Nr4: Open 'Engraving Machines & Tools' is deprecated, submenu can no longer be found using the steps listed in the requirements, alternative way to reach it was used
